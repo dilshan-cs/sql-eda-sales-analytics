@@ -73,8 +73,8 @@ select
 from datawarehouseanalytics.dim_products
 order by 1,2,3;
 ```
-
-📸 *Screenshot:* `screenshots/01-product-hierarchy.png`
+![Product report view output](screenshots/01-product-hierarchy.png)
+<!-- 📸 *Screenshot:* `screenshots/01-product-hierarchy.png` -->
 
 ### 2. Date Range Exploration
 Identified the sales activity window and the age range of customers.
