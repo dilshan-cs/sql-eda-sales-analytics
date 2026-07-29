@@ -87,8 +87,8 @@ select
 from datawarehouseanalytics.fact_sales
 where order_date != '';
 ```
-
-📸 *Screenshot:* `screenshots/02-date-range.png`
+![Product report view output](screenshots/02-date-range.png)
+<!-- 📸 *Screenshot:* `screenshots/02-date-range.png` -->
 
 ### 3. Business Metrics (KPI Report)
 Consolidated the core KPIs — total sales, quantity sold, average price, total orders, products, and customers — into a single summary report using `UNION ALL`.
@@ -103,8 +103,8 @@ union all
 select 'Total Orders', count(distinct order_number)
 from datawarehouseanalytics.fact_sales;
 ```
-
-📸 *Screenshot:* `screenshots/03-kpi-report.png`
+![Product report view output](screenshots/03-kpi-report.png)
+<!-- 📸 *Screenshot:* `screenshots/03-kpi-report.png` -->
 
 ### 4. Magnitude Analysis — Revenue by Category
 Joined `fact_sales` with `dim_products` to find which product categories generate the most revenue.
@@ -119,8 +119,8 @@ left join datawarehouseanalytics.dim_products p
 group by p.category
 order by total_revenue desc;
 ```
-
-📸 *Screenshot:* `screenshots/04-revenue-by-category.png`
+![Product report view output](screenshots/04-revenue-by-category.png)
+<!-- 📸 *Screenshot:* `screenshots/04-revenue-by-category.png` -->
 
 ### 5. Customer Distribution by Country & Gender
 Analyzed how the customer base is spread across countries and gender segments.
@@ -132,8 +132,8 @@ select
 from datawarehouseanalytics.dim_customers
 group by country;
 ```
-
-📸 *Screenshot:* `screenshots/05-customers-by-country.png`
+![Product report view output](screenshots/05-customers-by-country.png)
+<!-- 📸 *Screenshot:* `screenshots/05-customers-by-country.png` -->
 
 ### 6. Ranking — Top Products by Revenue
 Used a window function (`DENSE_RANK`) to rank products by total revenue generated.
@@ -149,8 +149,8 @@ left join datawarehouseanalytics.dim_products p
 group by p.product_name
 order by total_revenue desc;
 ```
-
-📸 *Screenshot:* `screenshots/06-top-products-ranked.png`
+![Product report view output](screenshots/06-top-products-ranked.png)
+<!-- 📸 *Screenshot:* `screenshots/06-top-products-ranked.png` -->
 
 > 📁 All screenshots are stored in [`/screenshots`](./screenshots). *(Placeholders — to be added.)*
 
