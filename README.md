@@ -2,7 +2,7 @@
 
 Exploratory Data Analysis (EDA) on a retail sales data warehouse using pure SQL. The project explores a star-schema dataset (customers, products, sales) to uncover business insights around revenue, customer behavior, product performance, and market reach — the kind of first-pass analysis a data analyst runs before building dashboards or deeper reports.
 
-This project is part of my personal portfolio, built to demonstrate practical SQL and analytical thinking for a **Data Analytics internship application**.
+This project is part of my personal portfolio, built to demonstrate practical SQL and analytical thinking for a **Data Analytics**.
 
 ---
 
